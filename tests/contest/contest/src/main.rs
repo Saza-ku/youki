@@ -102,6 +102,7 @@ fn main() -> Result<()> {
     let cgroup_v1_memory = cgroups::memory::get_test_group();
     let cgroup_v1_network = cgroups::network::get_test_group();
     let cgroup_v1_blkio = cgroups::blkio::get_test_group();
+    let cgroup_relative_cpu = cgroups::relative_cpus::get_test_group();
     let seccomp = get_seccomp_test();
     let seccomp_notify = get_seccomp_notify_test();
     let ro_paths = get_ro_paths_test();
